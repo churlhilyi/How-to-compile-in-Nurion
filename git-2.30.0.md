@@ -17,11 +17,11 @@ Then,
         make prefix=/pwd
         make install prefix=/pwd
 
-4. Add __PATH__ to your .bashrc:
+4. Add __PATH__ to your .bashrc :
 
         export PATH=$PATH:/pwd/bin
 
-5. Use __source__ command:
+5. Use __source__ command :
 
         source ~/.bashrc
         
