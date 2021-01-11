@@ -4,24 +4,24 @@ First, make sure you have already installed ___curl___ at Nurion.
 
 Then,
 
-1. Use  __wget__ command to download the source file : 
+1. Use  __wget__ command to download the source file: 
 
         wget https://www.kernel.org/pub/software/scm/git/git-2.30.0.tar.gz
 
-2. Use  __tar -xvzf__ command :
+2. Use  __tar -xvzf__ command:
 
         tar -xvzf git-2.30.0.tar.gz
 
-3. Install it locally :
+3. Install it locally:
 
         make prefix=/pwd
         make install prefix=/pwd
 
-4. Add __PATH__ to your .bashrc :
+4. Add __PATH__ to your .bashrc:
 
         export PATH=$PATH:/pwd/bin
 
-5. Use __source__ command :
+5. Use __source__ command:
 
         source ~/.bashrc
         
