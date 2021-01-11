@@ -17,7 +17,7 @@ Then,
         make prefix=/pwd
         make install prefix=/pwd
 
-4. Add PATH to your .bashrc:
+4. Add __PATH__ to your .bashrc:
 
         export PATH=$PATH:/pwd/bin
 
