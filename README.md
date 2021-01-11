@@ -1,1 +1,1 @@
-# How-to-install_at-Nurion
+# How to install ~ at Nurion
