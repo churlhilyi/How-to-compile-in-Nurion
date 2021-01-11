@@ -1,14 +1,14 @@
 ## git-2.30.0
 
-First, make sure you have already installed 'curl' at Nurion. 
+First, make sure you have already installed ___curl___ at Nurion. 
 
 Then,
 
-1. Use  'wget' command to download the source file : 
+1. Use  __wget__ command to download the source file : 
 
         wget https://www.kernel.org/pub/software/scm/git/git-2.30.0.tar.gz
 
-2. Use  'tar -xvzf' command :
+2. Use  __tar -xvzf__ command :
 
         tar -xvzf git-2.30.0.tar.gz
 
@@ -21,8 +21,9 @@ Then,
 
         export PATH=$PATH:/pwd/bin
 
-5. Use source command:
+5. Use __source__ command:
 
         source ~/.bashrc
         
+
 Done!
