@@ -1,1 +1,1 @@
-# How-to-compile-in-Nurion
+# How-to-install_at-Nurion
