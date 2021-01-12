@@ -8,7 +8,7 @@
 
             tar -xvf curl-7.74.0.tar.xz
 
-3. Install it locally:
+3. __Install__ it locally:
 
             ./configure --prefix=/pwd
 
