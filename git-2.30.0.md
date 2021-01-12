@@ -12,7 +12,7 @@ Then,
 
         tar -xvzf git-2.30.0.tar.gz
 
-3. Install it locally:
+3. __Install__ it locally:
 
         make prefix=/pwd
         make install prefix=/pwd
