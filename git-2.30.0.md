@@ -30,7 +30,7 @@ Done!
 
 -------------------------
 
-For the ssh connection,
+For the ___ssh___ connection,
 1. Add __config__ to ~/.ssh
 
         $ cat >> config
