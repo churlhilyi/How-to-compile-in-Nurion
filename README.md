@@ -1,1 +1,1 @@
-## This repository helps instalization of softwares at Nurion
+## This repository helps instalization of several softwares at Nurion
