@@ -1,6 +1,13 @@
 ## yumdownloader
 
-1. Use __yumdownloader__ command :
+
+
+
+1. Use __yum search__ command :
+
+           $ yum search package1
+
+2. Use __yumdownloader__ command :
 
            $ mkdir ~/rpm
            $ yumdownloader --destdir --resolve ~/rpm --resolve package1
@@ -37,7 +44,7 @@
 <br>
 
 ## rpm2cpio
-2. Use __rpm2cpio__ command :
+3. Use __rpm2cpio__ command :
 
             rpm2cpio ~/package1.rpm | cpio -idv 
 
