@@ -10,7 +10,7 @@
 2. Use __yumdownloader__ command :
 
            $ mkdir ~/rpm
-           $ yumdownloader --destdir --resolve ~/rpm --resolve package1
+           $ yumdownloader --destdir ~/rpm --resolve package1
 
             
      ###### __yumdownloader [options] package1 [package2...]__ 
