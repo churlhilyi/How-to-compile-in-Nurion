@@ -37,4 +37,7 @@
             export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
             export LIBGL_ALWAYS_INDIRECT=1
 
+3. Use __apt-get__ command to install X related apps:
+
+            sudo apt-get install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic
 Done!
