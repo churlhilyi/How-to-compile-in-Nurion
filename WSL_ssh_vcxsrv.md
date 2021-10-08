@@ -14,6 +14,7 @@
             ForwardX11 yes
             ForwardX11Trusted yes
             PasswordAuthentication yes
+            GSSAPIAuthentication no
             XAuthLocation /bin/xauth
             
 3. Set __alias__ in ~/.bashrc:
