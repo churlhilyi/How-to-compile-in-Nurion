@@ -38,6 +38,8 @@ curl 과 같은 라이브러리의 경우, /apps/common 디렉터리에 설치�
 -누리온 사용법 (https://www.ksc.re.kr/gsjw/jcs/hd) > [별첨6] 공통라이브러리 목록
 
 $ ls /apps/common/curl/7.59.0/
+
+
 bin include lib share
 
 [예시]
