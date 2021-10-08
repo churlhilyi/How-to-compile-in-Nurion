@@ -41,4 +41,7 @@
 3. Use __apt-get__ command to install X related apps:
 
             sudo apt-get install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic
+            
+4. 시작 프로그램 폴더(시작 → 실행 → "shell:startup")에 Xming 단축 아이콘을 위치시켜 Windows 부팅시 자동으로 실행되도록 한다.
+
 Done!
