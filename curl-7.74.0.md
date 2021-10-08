@@ -41,8 +41,11 @@ $ ls /apps/common/curl/7.59.0/
 bin include lib share
 
 [예시]
+
                         $ export LD_LIBRARY_PATH=/apps/common/curl/7.59.0/lib:$LD_LIBRARY_PATH
+                        
                         $ export LDFLAGS="-L/apps/common/curl/7.59.0/lib -lcurl"
+                        
                         $ export CPPFLAGS="-I/apps/common/curl/7.59.0/include"
 
 예시를 참고하시어 curl 경로를 설정하여 설치 진행해보시기 바라며
