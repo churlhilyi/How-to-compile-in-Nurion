@@ -33,6 +33,7 @@
             add "-ac" to Additional parameters for VcXsrv
 
 2. Add the following lines to ~/.bashrc file : 
+
             export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
             export LIBGL_ALWAYS_INDIRECT=1
 
