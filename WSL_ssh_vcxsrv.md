@@ -21,7 +21,7 @@
             alias nurion='ssh -X x2204a04@nurion.ksc.re.kr -p 22'
 
 ### for ___windows terminal___
-1. set 기본 프로필 to Ubuntu
+1. set default profile to Ubuntu
 2. add "cd" to /.basrc
 
 ### for ___vcxsrv___ :
