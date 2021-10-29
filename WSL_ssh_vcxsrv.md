@@ -42,7 +42,7 @@
 
             sudo apt-get install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic
             
-4. 시작 프로그램 폴더(시작 → 실행 → "shell:startup")에 Xming 단축 아이콘을 위치시켜 Windows 부팅시 자동으로 실행되도록 한다.
+4. 시작 프로그램 폴더(시작 → 실행 → "shell:startup")에 vcxsrv 단축 아이콘을 위치시켜 Windows 부팅시 자동으로 실행되도록 한다.
 
 5. Be sure there are no net gaurd to vcxsrv. For McAfee, a. 수신 및 송신: 모든 기기에 대해 열기, b. 넷가드: 꺼짐 
 Done!
