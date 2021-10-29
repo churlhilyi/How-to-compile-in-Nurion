@@ -23,7 +23,7 @@
 
 ### for ___windows terminal___
 1. set default profile to Ubuntu
-2. add "cd" to /.basrc
+2. add "cd" to /.bashrc
 
 ### for ___vcxsrv___ :
 1. Download & run the Installation file:
