@@ -13,4 +13,14 @@
             
 3. Add 'export' to the .bashrc file 
 
+4. Make a backup directory:
+            
+            mkdir ~/.vim/backup
+
+5. For vim-plug type(git is necessary):
+
+            curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
 Done!
