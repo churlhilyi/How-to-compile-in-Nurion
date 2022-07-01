@@ -44,7 +44,7 @@ bin include lib share
 
 [예시]
 
-                        $ export LD_LIBRARY_PATH=/apps/common/curl/7.59.0/lib:$LD_LIBRARY_PATH
+                        $ export LD_LIBRARY_PATH="/apps/common/curl/7.59.0/lib:$LD_LIBRARY_PATH"
                         
                         $ export LDFLAGS="-L/apps/common/curl/7.59.0/lib -lcurl"
                         
