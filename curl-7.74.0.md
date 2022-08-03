@@ -57,4 +57,12 @@ bin include lib share
 
 ----------------------------------
 
+if fails, try:
+
+                        export PATH=$PATH:/apps/shared/apps/curl/7.59.0/bin
+                        
+                        alias curl='/apps/shared/apps/curl/7.59.0/bin/curl'
+
+----------------------------------
+
 Done!
