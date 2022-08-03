@@ -27,7 +27,7 @@ __Linux build for ARPACK__
 >I didn’t dig it too much to make a package since it is a common thing to rebuilt software in Linux when you move to a new machine.
 
 -------------------------------
-If you are installed ARPACK then
+If you installed ARPACK then
 1. modify Makefile.intel-mpi file in /src/:
 
          LIBS = ${ARPACK} \
