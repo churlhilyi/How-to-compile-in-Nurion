@@ -16,6 +16,7 @@
             PasswordAuthentication yes
             GSSAPIAuthentication no
             XAuthLocation /bin/xauth
+            ServerAliveInterval 120
             
 3. Set __alias__ in ~/.bashrc:
 
