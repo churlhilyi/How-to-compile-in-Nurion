@@ -79,7 +79,7 @@ $ tar -xzvf fltk-1.3.0-source.tar.gz
 $ cd ..
 $ sh install-local.sh
 
-$ cd /home01/x2232a02/p4vasp/bin
+$ cd /home01/x@@@@a@@/p4vasp/bin
 $ ./p4v
 
 감사합니다.
