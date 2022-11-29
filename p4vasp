@@ -1,0 +1,86 @@
+##p4vasp
+
+
+"
+안녕하십니까
+사용자지원팀 입니다.
+
+테스트에 시간이 많이 소요되어 답변이 늦어진 점 양해부탁드립니다.
+
+문의주신 오류가 발생하는 원인은 설치하신 p4vasp 과 fltk 의 버전 호환성이 적합하지 않아 발생하는 것으로 보여집니다.
+
+일반적으로 버전 호환성의 경우 설치 시 체크하게 되어 있으나 p4vasp 의 경우 실행 시 체크하는 것으로 확인되며,
+이로 인하여 문의주신 오류가 발생하는 것으로 판단됩니다.
+
+앞선 답변에서 안내드린 p4vasp source 파일을 확인한 결과 아래와 같은 fltk 버전 호환성을 가지는 것을 확인하였습니다.
+
+[참고]
+$ cd p4vasp-0.3.30
+$ cat src/fltk-config.py | grep "fltk-config --version"
+if 0 and strip(run("fltk-config --version")) in ["1.1.5","1.1.6","1.1.7","1.1.8"]:
+
+다만 해당 버전의 source 파일의 경우 2008년도 무렵의 소스파일이기 때문에 현재 fltk 홈페이지에서 지원하지 않고 있으며,
+시스템과의 버전 호환성 등의 이유로 누리온 시스템에서의 설치는 어려울 것으로 보여집니다.
+
+대신 테스트 과정에서 fltk-1.3.0 버전이 p4vasp 에서 지원하는 것으로 확인하였습니다.
+
+추가로 확인을 진행한 결과 기존 p4vasp 설치의 경우 p4vasp 에서 fltk 가 포함된 통합 source 파일을 지원하였으나
+현재 p4vasp 의 서비스가 종료되어 해당 홈페이지가 없어진 것으로 보여집니다.
+
+[p4vasp 홈페이지]
+http://www.p4vasp.at/
+
+
+[fltk 가 포함된 통합 source 파일 차이점]
+- 기존 source 파일 : fltk 설치 스크립트는 존재하나 source 파일이 없음
+$ cd p4vasp-master/ext
+$ ls
+build-fltk.sh clean clean.sh
+
+- fltk 가 포함된 source 파일 : 설치 스크립트와 source 파일 존재
+$ cd p4vasp/ext
+$ ls
+build-fltk.sh clean.sh fltk-1.3.0
+
+
+fltk 가 포함된 통합 source 파일을 보유하고 계신 경우 해당 파일의 압축을 푸신 이후 동일하게 설치를 진행해주시기 바랍니다.
+[참고]
+$ cd p4vasp
+$ls ext
+build-fltk.sh clean.sh fltk-1.3.0
+$ sh install-local.sh
+
+
+통합 source 파일을 보유하고 있지 않으신 경우 github 또는 p4vasp 사용자 커뮤니티 등에서 통합 source 파일을
+찾아 다운을 받으신 이후 설치를 진행하시는 것을 권해드립니다.
+
+현재 누리온 시스템에서는 특정 프로그램의 source 파일을 제공하고 있지 않으며,
+사용자지원팀에서도 해당 source 파일을 보유하고 있지 않아 파일을 제공해 드리기 어려운 부분 양해부탁드립니다.
+
+통합 source 파일을 다운받기 어려우신 경우에는 아래와 같이 p4vasp source 파일 안에
+fltk source 파일을 추가하여 한번에 설치를 진행하실 수 있습니다.
+
+다만 p4vasp 의 테스트 결과 intel 컴파일러로 설치를 진행하시는 경우 undefined symbol 오류가 발생하는 것으 확인하였으므로
+gcc 컴파일러를 이용하여 설치를 진행해주시기 바랍니다.
+
+[설치 예시]
+$ module purge
+
+$ cd /scratch/x2232a02
+$ mkdir p4vasp_build
+$ cd p4vasp_build
+
+$ wget https://github.com/orest-d/p4vasp/archive/refs/heads/master.zip -O p4vasp.zip
+$ unzip p4vasp.zip
+$ cd p4vasp-master/ext
+
+$ wget http://repository.timesys.com/buildsources/f/fltk/fltk-1.3.0/fltk-1.3.0-source.tar.gz
+$ tar -xzvf fltk-1.3.0-source.tar.gz
+$ cd ..
+$ sh install-local.sh
+
+$ cd /home01/x2232a02/p4vasp/bin
+$ ./p4v
+
+감사합니다.
+"
