@@ -7,9 +7,10 @@
 2. Install it by typing __make__ command:
 
             ./configure --prefix=/home01/x2204a04/software/vim LDFLAGS="-L/apps/common/ncurses/6.1/lib"
+            (./configure --prefix=/home01/x2655a03/software/vim/ CC=icc CFLAGS="-O3 -fPIC" LDFLAGS="-L/apps/common/ncurses/6.1/lib")
             make -j 8
             make install
-            (if some error is occured, use gfortran compiler)
+            (If some error  occured, use gfortran compiler.)
             
 3. Add 'export' to the .bashrc file 
 
