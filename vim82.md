@@ -6,6 +6,7 @@
 
 2. Install it by typing __make__ command:
 
+            export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/apps/common/ncurses/6.1/lib"
             ./configure --prefix=/home01/x2204a04/software/vim LDFLAGS="-L/apps/common/ncurses/6.1/lib"
             (./configure --prefix=/home01/x2655a03/software/vim/ CC=icc CFLAGS="-O3 -fPIC" LDFLAGS="-L/apps/common/ncurses/6.1/lib")
             make -j 8
