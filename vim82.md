@@ -23,6 +23,42 @@
 
             curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
             https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+            vim ~/.vimrc
+            :PlugInstall 
+
+6. for fzf settings:
+
+            cd ~/.vim/plugged/fzf
+            ./install (key-binding: on)
+
+7. for bat:
+
+            module purge
+            curl https://sh.rustup.rs -sSf | sh
+            cargo install --locked bat
+
+8. add following env to .bashrc:
+
+            #--------------------fzf----------------------------------
+            [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+            export PATH="/home/.vim/plugged/fzf/bin/:$PATH"
+            # Preview file content using bat (https://github.com/sharkdp/bat)
+            export FZF_CTRL_T_OPTS="
+              --preview 'bat -n --color=always {}'
+              --bind 'ctrl-/:change-preview-window(50%|down|hidden|)'"
+
+            # CTRL-/ to toggle small preview window to see the full command
+            # CTRL-Y to copy the command into clipboard using pbcopy
+            export FZF_CTRL_R_OPTS="
+              --preview 'echo {}' --preview-window up:3:hidden:wrap
+              --bind 'ctrl-/:toggle-preview'
+              --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+              --color header:italic
+              --header 'Press CTRL-Y to copy command into clipboard'"
+
+            # Print tree structure in the preview window
+            export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+            . "$HOME/.cargo/env"
 
 
 Done!
